@@ -9,7 +9,7 @@ import time
 from scipy.ndimage.filters import gaussian_filter as gf
 
 # disable for evaluation on gpu
-#os.environ["CUDA_VISIBLE_DEVICES"] = ""
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 def myycbcr2rgb(vid):
     r = np.sum(vid * np.array([298.082, 0, 408.583]) / 256, axis=-1, keepdims=True) - 222.921
