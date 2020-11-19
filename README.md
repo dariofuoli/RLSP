@@ -18,12 +18,14 @@ python train.py
 In order to evaluate the trained model import the system class and load the latest checkpoint (default) or a specific checkpoint.
 ```
 # load
+import torch
 from system import System
 system = System()
 system.load_checkpoint("checkpoint_name.pt")  # optional
 
 # evaluate
-system.rlsp(x)
+with torch.no_grad():
+  system.rlsp(x)
 ```
 # Citation
 ```
