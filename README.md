@@ -10,12 +10,10 @@ The original RLSP model implementation in TensorFlow from the paper is available
 A complete implementation in Pytorch is available in the folder "RLSP/pytorch". Please note, this version implements a model with RGB output, as opposed to Y in the paper. For adaptation to Y output, please refer to code in "RLSP/evaluate/super_resolve.py" for color space transformations.
 
 Please specify the train and model parameters in "RLSP/pytorch/parameters.py". The model can be trained by running the script "RLSP/pytorch/train.py
-
 ```
 python train.py
 ```
-
-In order to evaluate the trained model import the system object and load the latest checkpoint (default) or a specific checkpoint.
+In order to evaluate the trained model import the system class and load the latest checkpoint (default) or a specific checkpoint.
 ```
 # load
 from system import System
@@ -25,7 +23,6 @@ system.load_checkpoint("checkpoint_name.pt")  # optional
 # evaluate
 system.rlsp(x)
 ```
-
 # Citation
 ```
 @inproceedings{fuoli_rlsp_2019,
