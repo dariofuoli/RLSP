@@ -25,7 +25,7 @@ system.load_checkpoint("checkpoint_name.pt")  # optional
 
 # evaluate
 with torch.no_grad():
-  system.rlsp(x)
+  y = system.rlsp(x)
 ```
 # Citation
 ```
