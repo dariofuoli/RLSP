@@ -15,6 +15,17 @@ Please specify the train and model parameters in "RLSP/pytorch/parameters.py". T
 python train.py
 ```
 
+In order to evaluate the trained model import the system object and load the latest checkpoint (default) or a specific checkpoint.
+```
+# load
+from system import System
+system = System()
+system.load_checkpoint("checkpoint_name.pt")  # optional
+
+# evaluate
+system.rlsp(x)
+```
+
 # Citation
 ```
 @inproceedings{fuoli_rlsp_2019,
