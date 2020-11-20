@@ -9,6 +9,7 @@ With the recent trend for ultra high definition displays, the demand for high qu
 
 # Code
 The original RLSP model implementation in TensorFlow from the paper is available in "RLSP/tensorflow". The provided training script is not complete, data loading and training details need to be added. The original model checkpoints of RLSP 7-48, RLSP 7-64 and RLSP 7-128 from the paper are available in the folder "RLSP/evaluate", along with a script to evaluate your own videos.
+
 A complete implementation in Pytorch is available in the folder "RLSP/pytorch". Please note, this version implements a model with RGB output, as opposed to Y in the paper. For adaptation to Y output, please refer to code in "RLSP/evaluate/super_resolve.py" for color space transformations.
 
 Please specify the train and model parameters in "RLSP/pytorch/parameters.py". The model can be trained by running the script "RLSP/pytorch/train.py
