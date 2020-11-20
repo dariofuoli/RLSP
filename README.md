@@ -15,7 +15,7 @@ Please specify the train and model parameters in "RLSP/pytorch/parameters.py". T
 ```
 python train.py
 ```
-In order to evaluate the trained model import the system class and load the latest checkpoint (default) or a specific checkpoint.
+In order to evaluate your trained model, import the system class and load the latest checkpoint (default) or a specific checkpoint.
 ```
 # load
 import torch
