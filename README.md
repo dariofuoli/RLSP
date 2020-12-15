@@ -1,6 +1,6 @@
 # RLSP - Efficient Video Super-Resolution through Recurrent Latent Space Propagation
 
-This is the official repository containing code and other material from the paper "Efficient Video Super-Resolution through Recurrent Latent Space Propagation" (https://arxiv.org/abs/1909.08080).
+Official repository containing code and other material from the paper "Efficient Video Super-Resolution through Recurrent Latent Space Propagation" (https://arxiv.org/abs/1909.08080).
 
 ![Alt text](docs/rlsp_model.jpg?raw=true "Title")
 
