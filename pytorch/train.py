@@ -15,10 +15,7 @@ loader_val = Loader_val()
 
 # start training
 start = time.time()
-# train epoch
 for x, y in loader_train.dataloader:
-
-    print("loop")
 
     x = x.to(device)
     y = y.to(device)
