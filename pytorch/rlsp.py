@@ -17,7 +17,6 @@ class RLSP(nn.Module):
         kernel_size = params["kernel size"]
         layers = params["layers"]
         state_dim = params["state dimension"]
-        device = params["device"]
 
         self.act = nn.ReLU()
         self.conv1 = nn.Conv2d(3*3 + 3*factor**2 + state_dim, filters, kernel_size, padding=int(kernel_size/2))
