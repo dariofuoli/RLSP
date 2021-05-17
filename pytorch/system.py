@@ -48,7 +48,6 @@ class System:
 
         loss = 0
         loss_psnr = 0
-        #h_loss = 0
         for i, (x, y) in enumerate(loader_val.dataloader):
             
             print("Sequence: ", i)
