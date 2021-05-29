@@ -105,7 +105,6 @@ class System:
 
         if str(device) == "cpu":
             print(device)
-
             checkpoint = torch.load(path, map_location=device)
         else:
             checkpoint = torch.load(path)
